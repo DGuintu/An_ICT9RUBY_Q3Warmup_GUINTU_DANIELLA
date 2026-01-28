@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Add Two Numbers</h2>
+        <input type="number" id="num1" placeholder="Enter First Number">
+        <input type="number" id="num2" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Sum()">Calculate</button>
+        
+        <div id="result"></div>
+
+    </div>
+    <script>
+        function Sum(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+
+            let Res_sum = n1+n2
+
+            document.getElementById("result").innerHTML = "Result" + Res_sum;
+        }
+    </script>
+
+    <div class="box">
+        <h2>Subtract Two Numbers</h2>
+        <input type="number" id="a" placeholder="Enter First Number">
+        <input type="number" id="b" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Diff()">Calculate</button>
+        
+        <div id="Result"></div>
+
+    </div>
+    <script>
+        function Diff(){
+            var a = Number(document.getElementById("a").value);
+            var b = Number(document.getElementById("b").value);
+
+            let Res_diff = a-b
+
+            document.getElementById("Result").innerHTML = "Result: " + Res_diff;
+        }
+    </script>
+
+    <div class="box">
+        <h2>Mutiply Two Numbers</h2>
+        <input type="number" id="factor1" placeholder="Enter First Number">
+        <input type="number" id="factor2" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Prod()">Calculate</button>
+        
+        <div id="product"></div>
+
+    </div>
+    <script>
+        function Prod(){
+            var c = Number(document.getElementById("factor1").value);
+            var d = Number(document.getElementById("factor2").value);
+
+            let Res_prod = c*d
+
+            document.getElementById("product").innerHTML = "Result: " + Res_prod;
+        }
+    </script>
+
+    <div class="box">
+        <h2>Divide Two Numbers</h2>
+        <input type="number" id="factor3" placeholder="Enter First Number">
+        <input type="number" id="factor4" placeholder="Enter Second Number">
+        <br>
+
+        <button onclick="Quot()">Calculate</button>
+        
+        <div id="quotient"></div>
+
+    </div>
+    <script>
+        function Quot(){
+            var e = Number(document.getElementById("factor3").value);
+            var f = Number(document.getElementById("factor4").value);
+
+            let Res_quot = e/f
+
+            document.getElementById("quotient").innerHTML = "Result: " + Res_quot;
+        }
+    </script>
+</body>
+</html>
